@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:background="@color/red"
+    android:gravity="center"
+    tools:context="raniel.evaluation.Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="REGISTER"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:hint="First Name"
+        android:background="@color/white"
+        android:id="@+id/FirstName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:hint="Middle Name"
+        android:background="@color/white"
+        android:id="@+id/MiddleName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:hint="Last Name"
+        android:background="@color/white"
+        android:id="@+id/LastName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:hint="Student Number"
+        android:background="@color/white"
+        android:id="@+id/etSetUsername"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@color/white"
+        android:id="@+id/etSetPassword"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="Course"
+        android:background="@color/white"
+        android:id="@+id/etSetCourse"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="Section"
+        android:background="@color/white"
+        android:id="@+id/etSetSection"
+        />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position:"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:text="Student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/rbStudent" />
+
+            <RadioButton
+                android:text="Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/rbAdmin" />
+        </RadioGroup>
+    </LinearLayout>
+    -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Sign Up"
+        android:onClick="onSignUp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/maroon"
+        />
+
+</LinearLayout>

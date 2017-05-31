@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@color/red"
+    tools:context="raniel.evaluation.Survey">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Question No."
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/qNum"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Question"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/ask"
+            />
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/rb"
+            >
+            <RadioButton
+                android:text="5 - Excellent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/rbExcellent" />
+            <RadioButton
+                android:text="4 - Above Average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/rbAboveAverage" />
+            <RadioButton
+                android:text="3 - Average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/rbAverage" />
+            <RadioButton
+                android:text="2 - Poor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/rbPoor" />
+
+            <RadioButton
+                android:text="1 - Very Poor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/rbVeryPoor" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/maroon"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/previous"
+            android:visibility="gone"
+            android:text="Back"/>
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/submit"
+            android:text="Next"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"
+            android:id="@+id/or"/>
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/maroon"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/comment"
+            android:text="Write a comment"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp"
+    android:gravity="center"
+    android:background="@color/red"
+    tools:context="raniel.evaluation.Login">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/activity_login">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:hint="Student Number"
+            android:cursorVisible="true"
+            android:id="@+id/etUsername"
+            android:background="#FFFFFF"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:cursorVisible="true"
+            android:id="@+id/etPassword"
+            android:background="@color/white"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Sign In"
+                android:onClick="onLogin"
+                android:textColor="@color/white"
+                android:background="@color/maroon"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:text="Sign Up"
+                android:onClick="onRegister"
+                android:textColor="@color/white"
+                android:background="@color/maroon"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
